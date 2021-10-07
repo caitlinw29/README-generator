@@ -18,6 +18,8 @@
   },
   "homepage": "https://github.com/caitlinw29/README-generator#readme",
   "dependencies": {
-    "inquirer": "^8.2.0"
+    "fs": "^0.0.1-security",
+    "inquirer": "^8.2.0",
+    "path": "^0.12.7"
   }
 }
