@@ -37,7 +37,7 @@ const questions = [
         message: 'What are the test instructions?',
     },
     {
-        type: 'checkbox',
+        type: 'list',
         name: 'license',
         message: 'What are the licenses?',
         choices: ['Apache', 'Boost', 'MIT', 'IBM'],
