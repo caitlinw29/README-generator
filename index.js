@@ -64,12 +64,7 @@ function init() {
     inquirer
         .prompt(questions)
         .then((answers) => {
-            // const readmePageContent = generateREADME(answers);
-
-            // fs.writeFile('README.md', readmePageContent, (err) =>
-            //     err ? console.log(err) : console.log('Successfully created README!')
-            // );
-            console.log(answers);
+            writeToFile("generated_README.md", markdown({...answers}));
         });
 }
 
@@ -77,9 +72,5 @@ function init() {
 init();
 
 
-
-
-// const generateREADME = (answers) =>
-// ``;
 
 
