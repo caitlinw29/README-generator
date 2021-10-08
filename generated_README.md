@@ -1,8 +1,8 @@
-# d
+# Weather Dashboard
 
-![License](https://img.shields.io/badge/License-Apache-blue.svg)
+![License](https://img.shields.io/badge/License-IBM-blue.svg)
 
-s
+An app to see current and future weather conditions
 
 ## Table of Contents
 
@@ -15,25 +15,25 @@ s
 
 ## Installation
 
-a
+See deployed site
 
 ## Usage
 
-s
+Use search bar
 
 ## Contributions
 
-s
+Submit pull requests
 
 ## Testing
 
-s
+N/A
 
 ## License
 
-This application is covered under Apache
+This application is covered under IBM
 
 ## Questions
 
-Contact me with any questions at id or through github at github.com/caitlinw29
+Contact me with any questions at email@yahoo.com or through github at github.com/caitlinw29
 
