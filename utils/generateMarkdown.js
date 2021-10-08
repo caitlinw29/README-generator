@@ -1,10 +1,9 @@
-// TODO: Create a function that returns a license badge based on which license is passed in
-// If there is no license, return an empty string
+//function to create the license badge
 function renderLicenseBadge(license) {
   return `![License](https://img.shields.io/badge/License-${license}-blue.svg)`
 }
 
-// TODO: Create a function to generate markdown for README
+//generate markdown
 function generateMarkdown(data) {
   return `# ${data.title}
 
@@ -48,4 +47,5 @@ Contact me with any questions at ${data.email} or through github at github.com/$
 `;
 }
 
+//export the markdown so it can be pulled in index.js
 module.exports = generateMarkdown;
