@@ -2,7 +2,6 @@
 const inquirer = require('inquirer');
 const fs = require('fs');
 const markdown = require('./utils/generateMarkdown.js');
-const path = require('path');
 
 //questions for inquirer
 const questions = [
@@ -39,7 +38,7 @@ const questions = [
     {
         type: 'list',
         name: 'license',
-        message: 'What are the licenses?',
+        message: 'What is the license to use?',
         choices: ['Apache', 'Boost', 'MIT', 'IBM'],
     },
     {
@@ -50,21 +49,24 @@ const questions = [
     {
         type: 'input',
         name: 'email',
-        message: 'Enter your email.',
+        message: 'Enter your email',
     },
 ];
 
 //Set up function to write answers in file
 function writeToFile(fileName, data) {
-    return fs.writeFileSync(path.join(process.cwd(), fileName), data)
+    fs.writeFile(fileName, (data), (err) =>
+      err ? console.error(err) : console.log('README created!')
+    );
  }
 
 //inquire the questions, then put answers in a writeToFile function aimed at the README
 function init() {
     inquirer
         .prompt(questions)
-        .then((answers) => {
-            writeToFile("generated_README.md", markdown({...answers}));
+        .then((data) => {
+            //pass the data into the markdown js
+            writeToFile("generate_README.md", markdown({...data}));
         });
 }
 
