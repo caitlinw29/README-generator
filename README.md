@@ -2,7 +2,7 @@
 ## Description
 * README Generator utilizes node.js to create a README.md file from the command line.
 
-* See [video demo](https://watch.screencastify.com/v/BXP6hW3obuXTWwEEGJot)
+* See [video demo](https://watch.screencastify.com/v/l8vGVssIiSTdoPLAFmuS)
 
 ![Command line usage](./assets/img/readme-genSS.png)
 ## Installation 
