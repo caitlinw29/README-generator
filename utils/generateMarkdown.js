@@ -42,7 +42,7 @@ This application is covered under ${data.license}
 
 ## Questions
 
-Contact me with any questions at ${data.email} or through github at github.com/${data.github}
+Contact me with any questions at ${data.email} or through github at [${data.github}](https://github.com/${data.github})
 
 `;
 }
